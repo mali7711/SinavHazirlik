@@ -1,0 +1,31 @@
+﻿@model List<UsersModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Kullanıcı Adı</th>
+            <th scope="col">İsim Soyisim</th>
+            <th scope="col">E-posta</th>
+            <th scope="col">Parola</th>
+            <th scope="col">Url</th>
+            <th scope="col">Doğum Tarihi</th>
+
+
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var Talebe in Model)
+        {
+            <tr>
+                <th scope="row">@Talebe.KullaniciAdi</th>
+                <td>@Talebe.IsimSoyisim</td>
+                <td>@Talebe.Eposta</td>
+                <td>@Talebe.Parola</td>
+                <td>@Talebe.Url</td>
+                <td>@Talebe.DogumYili</td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>
